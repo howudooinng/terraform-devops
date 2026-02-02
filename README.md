@@ -1,15 +1,7 @@
-# 🚀 Terraform DevOps — Terraform In One Shot
-
-
-![Terraform](https://img.shields.io/badge/Terraform-IaC-7B42BC?logo=terraform&logoColor=white)
-
-![AWS](https://img.shields.io/badge/AWS-EC2-orange?logo=amazonaws&logoColor=white)
-
-![GitHub repo size](https://img.shields.io/github/repo-size/howudooinng/terraform-devops)
-
-![GitHub stars](https://img.shields.io/github/stars/howudooinng/terraform-devops?style=social)
-
-![GitHub forks](https://img.shields.io/github/forks/howudooinng/terraform-devops?style=social)
-
-![License](https://img.shields.io/github/license/howudooinng/terraform-devops)
-
+flowchart LR
+    Dev[Developer Laptop] -->|terraform apply| TF[Terraform CLI]
+    TF -->|AWS Provider| AWS[AWS Account]
+    AWS --> EC2[EC2 Instance]
+    EC2 -->|user-data| NGINX[NGINX Web Server]
+    Dev -->|SSH| EC2
+    Dev -->|HTTP| NGINX
