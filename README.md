@@ -1,11 +1,5 @@
-![Terraform](https://img.shields.io/badge/Terraform-IaC-7B42BC?logo=terraform&logoColor=white)
+# 🚀 Terraform DevOps — Terraform In One Shot
 
-![AWS](https://img.shields.io/badge/AWS-EC2-orange?logo=amazonaws&logoColor=white)
-
-![GitHub repo size](https://img.shields.io/github/repo-size/howudooinng/terraform-devops)
-
-![GitHub stars](https://img.shields.io/github/stars/howudooinng/terraform-devops?style=social)
-
-![GitHub forks](https://img.shields.io/github/forks/howudooinng/terraform-devops?style=social)
-
-![License](https://img.shields.io/github/license/howudooinng/terraform-devops)
+![Terraform](...)
+![AWS](...)
+...
