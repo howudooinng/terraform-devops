@@ -1,4 +1,9 @@
 #using variables as we have to learn for prod related workflows
+#we can directly create a variable.tf file and define all the variables there
+#to be used in the main configuration files for the creation of the terraform infrastructure
+
+
+
 
 variable "ec2_instance_type" {
   default = "t3.micro"
