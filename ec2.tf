@@ -1,12 +1,12 @@
-#key pair (login)
+#ceating key pair (login)
 
 resource "aws_key_pair" "my_key" {
   key_name   = "terra-key-ec2"
   public_key = file("terra-key-ec2.pub")
 }
 
-#VPC & Security group
-#use default vpc also can be used
+#Creating VPC & Security group
+#default vpc also can be used
 
 resource "aws_default_vpc" "default" {
 
@@ -54,6 +54,7 @@ resource "aws_security_group" "my_security_group" {
   }
 }
 #instance creation
+
 resource "aws_instance" "my-instance" {
   key_name        = aws_key_pair.my_key.key_name
   security_groups = [aws_security_group.my_security_group.name]
